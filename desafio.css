@@ -1,0 +1,111 @@
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	background: #1c3643;
+	height: 50px;
+	align-items: center;
+	position: relative;
+}
+
+.logo {
+	width: 40%;
+}
+
+.banner, .menu{
+	width: 30%;
+	height: 100%;
+}
+
+.portada {
+	display: flex;
+}
+
+.col1 {
+	width: 70%;
+	margin-top: 0;
+	transition: .5s;
+}
+
+.col2 {
+	width: 30%;
+	position: relative;
+	top: 0;
+	transition: .5s;
+}
+
+.banner {
+	background: peru;
+	color: black;
+	position: absolute;
+	transition: .5s;
+	left: 40%;
+	top: 0;
+}
+
+.menu {
+	background: purple;
+	color: black;
+	position: absolute;
+	transition: .5s;
+	right: 0;
+	top: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+	.banner {
+		transition: .5s;
+		left: 69.6%;
+		top: 50px;
+	}
+
+	.col2 {
+		top: 50px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.col1 {
+		margin-top: 50px;
+	}
+
+	.menu {
+		right: 30%;
+		top: 50px;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.col1 {
+		margin-top: 100px;
+		width: 99.5%;
+	}
+
+	.col2 {
+		width: auto;
+		top: 0;
+	}
+	
+	.menu {
+		right: 0;
+		width: 100%;
+	}
+
+	.banner {
+		left: 0;
+		top: 100px;
+		width: 99.5%;
+	}
+
+	.portada {
+		display: inline-block;
+	}
+}
